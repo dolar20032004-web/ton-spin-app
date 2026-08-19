@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ton Spin</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .balance-card {
+            background: #1e1e1e;
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+        }
+        .btn {
+            background-color: #0088cc;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>🚀 Ton Spin App</h2>
+        
+        <div class="balance-card">
+            <p>رصيدك الحالي</p>
+            <h3>💎 0.00 TON</h3>
+        </div>
+
+        <button class="btn" onclick="alert('أهلاً بك في اللعبة!')">ابدأ اللعب الآن</button>
+    </div>
+
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+    </script>
+</body>
+</html>
